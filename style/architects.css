@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* shared style */
+.display-flex {
+    display: flex;
+}
+
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.10);
+}
+
+
+
+.text-grey {
+    color: #424242;
+}
+
+.text-yellow {
+    color: #FF900E;
+}
+
+.btn-primary {
+    background-color: rgba(255, 144, 14, 1.00);
+    border-radius: 8px;
+    padding: 21px 25px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+
+}
+
+.display-hide {
+    display: none;
+}
+
+/* width of the site style */
+.nav-bar,
+.banner,
+.our-features,
+.features,
+.fact-card {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Navbar link */
+.nav-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.nav-bar {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.nav-links {
+    width: 450px;
+    justify-content: space-between;
+    margin: 1rem 0;
+
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* banner section */
+.banner {
+    margin-top: 6rem;
+
+}
+
+.banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 4rem;
+}
+
+.banner-description {
+    margin: 1.75rem auto;
+    font-size: 1.25rem;
+}
+
+.banner-image {
+    margin: 50px auto;
+    border-radius: 8px;
+    width: 100%;
+
+}
+
+.display-hide {
+    display: none;
+}
+
+/* our features */
+.team-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teams-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.team-image {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.team-content {
+    max-width: 530px;
+    margin-left: 130px;
+}
+
+.team-title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.team-description {
+    font-size: 20px;
+    padding: 24px 0;
+}
+
+/* features-section */
+.features-content {
+    max-width: 586px;
+    margin-left: 20px;
+}
+
+#features-section-border {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.architect {
+    margin-bottom: 50px;
+}
+
+.features-section-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.features-card {
+    padding: 20px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8;
+    margin-bottom: 10px;
+}
+
+.features {
+    gap: 100px;
+    margin-top: 130px;
+}
+
+.features-title {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+.architect-image {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.badge {
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+#badge-card {
+    padding: 46px 42px;
+    font-size: 1.5rem;
+    margin-top: -140px;
+    margin-left: -100px;
+}
+
+#badge-text {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+/* fact section */
+
+.fact-title {
+    font-size: 3rem;
+    margin: 1.75rem 0;
+    font-weight: 700;
+}
+
+.fact-description {
+    width: 500px;
+}
+
+.fact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+
+
+
+}
+
+.fact-badge {
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.75rem;
+}
+
+.fact-sub-title {
+    font-size: 1.25rem;
+    color: #424242;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 4rem;
+    color: #424242;
+    font-weight: 700;
+
+}
+
+@media screen and (max-width:576px) {
+
+
+    .nav-bar,
+    .team-container,
+    .features {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .banner {
+        margin-top: 1rem;
+    }
+
+    .teams-image,
+    .fact-container {
+
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+
+    }
+
+    .fact-container {
+        justify-items: center;
+    }
+
+    .fact-content {
+        margin-left: 20px;
+    }
+
+    .team-content {
+        padding-top: 20px;
+        margin: 0 auto;
+    }
+
+    #badge-card {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+
+
+
+
+
+
+}
