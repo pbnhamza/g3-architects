@@ -263,7 +263,7 @@
 /* sponsor section */
 .sponsor-container {
     text-align: center;
-    margin-top: 8rem;
+    margin-top: 130px;
 }
 
 .sponsor-title {
@@ -274,7 +274,7 @@
 .sponsor-description {
     font-size: 1.25rem;
     color: #424242;
-    margin: 1rem auto;
+    margin: 20px auto;
     max-width: 530px;
 
 
